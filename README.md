@@ -9,9 +9,11 @@ There are 11+ ZK / AI bounty platforms (Algora, Drips Wave, Code4rena, Cantina, 
 ## Install
 
 ```bash
-pipx install bounty-radar-mcp
-# or
-pip install --user bounty-radar-mcp
+# Recommended: uvx (no install, runs from GitHub):
+uvx --from git+https://github.com/Battam1111/bounty-radar-mcp.git bounty-radar-mcp
+
+# Or with pipx:
+pipx install git+https://github.com/Battam1111/bounty-radar-mcp.git
 ```
 
 ## Configure in Claude Desktop
@@ -22,18 +24,21 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
 {
   "mcpServers": {
     "bounty-radar": {
-      "command": "bounty-radar-mcp"
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/Battam1111/bounty-radar-mcp.git", "bounty-radar-mcp"]
     }
   }
 }
 ```
+
+(Or, if you already ran `pipx install` above, just `"command": "bounty-radar-mcp"`.)
 
 Restart Claude Desktop. Type `/` to see the new tools.
 
 ## Configure in Claude Code
 
 ```bash
-claude mcp add bounty-radar bounty-radar-mcp
+claude mcp add bounty-radar -- uvx --from git+https://github.com/Battam1111/bounty-radar-mcp.git bounty-radar-mcp
 ```
 
 ## Configure in Cursor
@@ -44,11 +49,14 @@ claude mcp add bounty-radar bounty-radar-mcp
 {
   "mcpServers": {
     "bounty-radar": {
-      "command": "bounty-radar-mcp"
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/Battam1111/bounty-radar-mcp.git", "bounty-radar-mcp"]
     }
   }
 }
 ```
+
+(Or, if you already ran `pipx install` above, just `"command": "bounty-radar-mcp"`.)
 
 ## Tools exposed
 
