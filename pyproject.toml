@@ -1,0 +1,24 @@
+[project]
+name = "bounty-radar-mcp"
+version = "0.1.0"
+description = "MCP server for the Bounty Radar feed — query live ZK + AI bounties from any MCP client."
+authors = [{name = "Yanjun Chen"}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.0.0", "httpx>=0.27.0"]
+
+[project.scripts]
+bounty-radar-mcp = "bounty_radar_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/Battam1111/bounty-radar-mcp"
+RadarFeed = "https://battam1111.github.io/bounty-radar-data/"
+Cookbook = "https://battam1111.github.io/midnight-zk-cookbook/"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bounty_radar_mcp"]
