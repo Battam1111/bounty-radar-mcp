@@ -10,6 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python-version: ["3.10", "3.11", "3.12"]
     steps:
@@ -21,14 +22,6 @@ jobs:
         run: |
           pip install -e .
       - name: Import sanity
-        run: |
-          python -c "from bounty_radar_mcp.server import mcp; print('imports OK')"
+        run: python -c "from bounty_radar_mcp.server import mcp; print('imports OK')"
       - name: Live feed reachable
-        run: |
-          python -c "
-          from bounty_radar_mcp.server import _fetch_feed
-          d = _fetch_feed()
-          assert 'bounties' in d, f'no bounties key in {d.keys()}'
-          assert len(d['bounties']) > 0, 'feed empty'
-          print(f'feed has {len(d["bounties"])} bounties')
-          "
+        run: python tests/test_live_feed_reachable.py
