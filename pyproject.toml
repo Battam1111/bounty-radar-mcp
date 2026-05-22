@@ -1,6 +1,6 @@
 [project]
 name = "bounty-radar-mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "MCP server for the Bounty Radar feed — query live ZK + AI bounties from any MCP client."
 authors = [{name = "Yanjun Chen"}]
 license = "MIT"
