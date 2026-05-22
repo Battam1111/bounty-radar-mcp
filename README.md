@@ -112,3 +112,15 @@ MIT.
 ## Author
 
 Yanjun Chen ([@Battam1111](https://github.com/Battam1111)). PRs and detector suggestions welcome.
+
+---
+
+<!-- related-projects:start -->
+
+## Related projects
+
+- [**bounty-radar-data**](https://github.com/Battam1111/bounty-radar-data) — Source-of-truth feed this server queries
+- [**midnight-zk-cookbook**](https://github.com/Battam1111/midnight-zk-cookbook) — ZK tutorials + paid audits + bundles
+- [**zk-pipeline-doctor**](https://github.com/Battam1111/zk-pipeline-doctor) — OSS CLI for auditing ZK projects
+
+<!-- related-projects:end -->
