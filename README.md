@@ -2,6 +2,20 @@
 
 > MCP server for the live [Bounty Radar feed](https://battam1111.github.io/bounty-radar-data/) — query ZK + AI bounties across 11 ecosystems from inside Claude Desktop, Claude Code, Cursor, Windsurf, LibreChat, or any [MCP](https://modelcontextprotocol.io/) client.
 
+## Why use this MCP server
+
+Free for everyone. The same bounty feed available at [battam1111.github.io/bounty-radar-data/](https://battam1111.github.io/bounty-radar-data/) — but accessible from inside your IDE without leaving Claude / Cursor / Windsurf. You can ask "show me ZK bounties matching Noir > $500" without context-switching.
+
+**When you'd want to upgrade beyond this free MCP**:
+
+- **You want push, not poll.** This MCP returns data on request. [$19/mo Hobbyist](https://polar.sh/checkout/polar_c_BbZbN6eJnZ7rwsUfT1pMsj4lTftwnfMoGdWBo0KozKU) pushes new bounties to your Telegram the moment they appear.
+- **You want webhook delivery.** [$97/mo Pro](https://polar.sh/checkout/polar_c_CKKhyOq11BHuG2AulflWkm53YU98pLdrNo22h3OlB4O) signs each new-match event with HMAC-SHA256 and POSTs to your URL.
+- **You're a team.** [$497/mo Team](https://polar.sh/checkout/polar_c_bT1FpxfzlShI3PcdHxTrHeJf8EVO1AFaWbFc90Z9mfC) adds shared Slack/Discord delivery + custom detector requests + 5 seats.
+
+[Compare tiers](https://battam1111.github.io/midnight-zk-cookbook/pricing.html#radar) · [Pricing](https://battam1111.github.io/midnight-zk-cookbook/pricing.html).
+
+
+
 ## Why
 
 There are 11+ ZK / AI bounty platforms (Algora, Drips Wave, Code4rena, Cantina, Sherlock, Immunefi, Bountycaster, plus per-ecosystem GitHub label-search). Manually monitoring them is slow. We aggregate them 24/7 and expose the firehose as MCP tools so an LLM can search, filter, and summarize directly from your editor.
