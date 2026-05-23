@@ -1,10 +1,10 @@
 # bounty-radar-mcp
 
-> MCP server for the live [Bounty Radar feed](https://battam1111.github.io/bounty-radar-data/) — query ZK + AI bounties across 11 ecosystems from inside Claude Desktop, Claude Code, Cursor, Windsurf, LibreChat, or any [MCP](https://modelcontextprotocol.io/) client.
+> MCP server for the live [Bounty Radar feed](https://battam1111.github.io/bounty-radar-data/); query ZK + AI bounties across 11 ecosystems from inside Claude Desktop, Claude Code, Cursor, Windsurf, LibreChat, or any [MCP](https://modelcontextprotocol.io/) client.
 
 ## Why use this MCP server
 
-Free for everyone. The same bounty feed available at [battam1111.github.io/bounty-radar-data/](https://battam1111.github.io/bounty-radar-data/) — but accessible from inside your IDE without leaving Claude / Cursor / Windsurf. You can ask "show me ZK bounties matching Noir > $500" without context-switching.
+Free for everyone. The same bounty feed available at [battam1111.github.io/bounty-radar-data/](https://battam1111.github.io/bounty-radar-data/) (but accessible from inside your IDE without leaving Claude / Cursor / Windsurf). You can ask "show me ZK bounties matching Noir > $500" without context-switching.
 
 **When you'd want to upgrade beyond this free MCP**:
 
@@ -87,7 +87,7 @@ claude mcp add bounty-radar -- uvx --from git+https://github.com/Battam1111/boun
 
 > "Use bounty-radar to find any open ZK bounty paying over \$500 in the Aleo ecosystem."
 
-> "Search for Noir tutorials I could write — sort by merge_probability."
+> "Search for Noir tutorials I could write; sort by merge_probability."
 
 > "What's the latest from Midnight Network bounty board?"
 
@@ -116,8 +116,8 @@ The free MCP server is more than enough for casual bounty hunting; the paid tier
 
 ## Sibling projects
 
-- [Midnight ZK Cookbook](https://battam1111.github.io/midnight-zk-cookbook/) — 11 tutorials across Midnight, Aleo, Noir
-- [zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor) — OSS CLI that diagnoses ZK circuit projects
+- [Midnight ZK Cookbook](https://battam1111.github.io/midnight-zk-cookbook/); 11 tutorials across Midnight, Aleo, Noir
+- [zk-pipeline-doctor](https://github.com/Battam1111/zk-pipeline-doctor); OSS CLI that diagnoses ZK circuit projects
 
 ## License
 
@@ -133,8 +133,8 @@ Yanjun Chen ([@Battam1111](https://github.com/Battam1111)). PRs and detector sug
 
 ## Related projects
 
-- [**bounty-radar-data**](https://github.com/Battam1111/bounty-radar-data) — Source-of-truth feed this server queries
-- [**midnight-zk-cookbook**](https://github.com/Battam1111/midnight-zk-cookbook) — currently in rollback; see DISCLOSURE there
-- [**zk-pipeline-doctor**](https://github.com/Battam1111/zk-pipeline-doctor) — OSS CLI for auditing ZK projects
+- [**bounty-radar-data**](https://github.com/Battam1111/bounty-radar-data); Source-of-truth feed this server queries
+- [**midnight-zk-cookbook**](https://github.com/Battam1111/midnight-zk-cookbook); currently in rollback; see DISCLOSURE there
+- [**zk-pipeline-doctor**](https://github.com/Battam1111/zk-pipeline-doctor); OSS CLI for auditing ZK projects
 
 <!-- related-projects:end -->
